@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap');
 .Landing-div{
     display: flex;
     flex-direction: column;
@@ -6,24 +5,26 @@
     align-items: center;
     height: 100vh;
     color: white;
-    font-family: "Inter"; 
+    font-family: "Roboto"; 
 }
-.masked-text{
-    position: relative;
-}
-.masked-text::before{
-    content: "ISHAN PANDEY";
-    position: absolute;
-    top:0;
-    right:0;
-    background: -webkit-linear-gradient(left,  rgb(77, 196, 103) 0%,rgba(0,0,255,1) 100%);
+.masked-text-1{
+    background: url("../../Media/green.png");
+    background-size: 400%;
+    background-position: 50% 0%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    opacity: 0;
 }
-
-@keyframes textmaskmove{
-    50%{
-        opacity: 0;
-    }
+.masked-text-2{
+    background: url("../../Media/blue.png");
+    background-size: 400%;
+    background-position: 50% 0%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.masked-text-3{
+    background: url("../../Media/red.png");
+    background-size: 400%;
+    background-position: 50% 0%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
