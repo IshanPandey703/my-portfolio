@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap');
+.Landing-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    font-family: "Inter"; 
+}
+.masked-text{
+    position: relative;
+}
+.masked-text::before{
+    content: "ISHAN PANDEY";
+    position: absolute;
+    top:0;
+    right:0;
+    background: -webkit-linear-gradient(left,  rgb(77, 196, 103) 0%,rgba(0,0,255,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0;
+}
+
+@keyframes textmaskmove{
+    50%{
+        opacity: 0;
+    }
+}
