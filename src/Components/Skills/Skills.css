@@ -1,0 +1,34 @@
+.Skills{
+    height: 100vh;
+    padding: 3% 10% 0;
+}
+
+.Skills-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    height: 100%;
+}
+
+.heading{
+    text-align: center;
+    margin: auto;
+    width: 80%;
+    font-size: 4rem;
+    align-self: start;
+    background-color: #201E23;
+    border-radius: 40px;
+    padding: 1% 2%;
+}
+
+.icon-container{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 1rem;
+    justify-content: center;
+}
+
+.icon-container > img {
+    height: 100px;
+}
