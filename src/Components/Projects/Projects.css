@@ -1,6 +1,6 @@
 .Projects{
     display: grid;
-    margin: 3% 8%;
+    margin: 8% 8%;
     height: 100vh;
     grid-template-columns: repeat(3,1fr);
     row-gap: 1.5rem;
@@ -15,8 +15,35 @@
 }
 
 .Projects>.heading{
-    grid-column-start:3;
-    grid-column-end:4;
+    text-align: center;
+    width: 80%;
+    font-size: clamp(2.7rem,11vw,4rem);
+    align-self: end;
+    justify-self: end;
+    grid-column: 3 / 4;
     background-color: #20449F;
+    border-radius: 40px;
+    padding: 1% 2%;
+}
+@media (max-width:1300px) {
+    .Projects>.heading{
+        grid-column: 2 / 4;
+        justify-self: end;
+    }
+    .card-container{
+        align-items: start;
+    }
+}
+
+@media (max-width:920px) {
+
+    .card-container{
+        grid-template-columns: 1fr;
+    }
+
+    .Projects>.heading{
+        grid-column: 1 / 4;
+        justify-self: center;
+    }
 }
 

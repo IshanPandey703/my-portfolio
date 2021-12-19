@@ -3,8 +3,10 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
+import "./ProjectCard.css";
 
 export default function ProjectCard(props) {
+
     return (
         <Card sx = {{backgroundColor:"#201E23", color:"#FFF"}}>
             <CardMedia
@@ -14,10 +16,10 @@ export default function ProjectCard(props) {
                 alt="green iguana"
             />
             <CardContent >
-                <h3>
+                <h3 className="Project-title">
                     {props.heading}
                 </h3>
-                <div style={{fontSize:"1.2rem",fontWeight:"200"}}>
+                <div className="Project-description">
                     {props.children}
                 </div>
             </CardContent>
