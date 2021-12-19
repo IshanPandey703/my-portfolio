@@ -30,5 +30,5 @@
 }
 
 .masked-text-1, .masked-text-2, .masked-text-3{
-    font-size: clamp(2rem,11vw,8rem);
+    font-size: clamp(3rem,11vw,8rem);
 }

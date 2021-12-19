@@ -10,7 +10,7 @@ export default function LandingPage() {
     const q = gsap.utils.selector(el)
     const tl = useRef()
     useEffect(()=>{
-        tl.current = gsap.timeline({repeat: -1,defaults: {duration: 5}, delay:-3})
+        tl.current = gsap.timeline({repeat: -1,defaults: {duration: 5}})
                     .to(q(".masked-text-1"),{backgroundPosition: "50% 99%"})
                     .to(q(".masked-text-2"), {backgroundPosition: "50% 99%"})
                     .to(q(".masked-text-3"), {backgroundPosition: "50% 99%"})
