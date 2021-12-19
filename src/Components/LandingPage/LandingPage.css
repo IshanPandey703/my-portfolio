@@ -28,3 +28,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.masked-text-1, .masked-text-2, .masked-text-3{
+    font-size: clamp(2rem,11vw,8rem);
+}
