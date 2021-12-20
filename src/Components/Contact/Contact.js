@@ -23,10 +23,9 @@ export default function Contact() {
         message: ""
     });
 
-    console.log(details);
-
     function handleOnChange(event) {
-
+        
+        console.log(event.target);
         // target will point to input field that triggered handleOnChange 
         const target = event.target.name;
 
@@ -53,19 +52,19 @@ export default function Contact() {
                 <FormControl fullWidth>
                     <InputLabel sx={InputLabelStyle} htmlFor="full-name" variant="outlined">Full Name</InputLabel>
                     <Input name="fullName" onChange={handleOnChange} value={details.fullName} 
-                    sx={InputStyle} id="full-name" aria-describedby="my-helper-text" required />
+                    sx={InputStyle} id="full-name" required />
                 </FormControl>
 
                 <FormControl fullWidth>
                     <InputLabel sx={InputLabelStyle} htmlFor="email">Email address</InputLabel>
                     <Input name="email" onChange={handleOnChange} value={details.email} 
-                    sx={InputStyle} id="email" aria-describedby="my-helper-text" required />
+                    sx={InputStyle} id="email" required />
                 </FormControl>
                 
                 <FormControl fullWidth>
                     <InputLabel sx={InputLabelStyle} htmlFor="contact-number">Contact Number</InputLabel>
                     <Input name="contactNumber" onChange={handleOnChange} value={details.contactNumber}
-                    sx={InputStyle} id="contact-number" aria-describedby="my-helper-text" required />
+                    sx={InputStyle} id="contact-number" required />
                 </FormControl>
                 
                 <TextField name="message" onChange={handleOnChange} value={details.message} 
