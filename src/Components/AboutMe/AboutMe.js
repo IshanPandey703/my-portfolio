@@ -3,7 +3,7 @@ import "./AboutMe.css";
 
 export default function AboutMe() {
     return (
-    <div className="About-me">
+    <div className="About-me popout">
         <img src={myimg} alt="My-Photo"/>
         <div className="Aboutme-text-container">
             <h1 className="heading">About Me</h1>

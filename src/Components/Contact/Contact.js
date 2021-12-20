@@ -8,32 +8,70 @@ import gmail from "../../Media/gmail.svg";
 import github from "../../Media/github.svg";
 import linkedin from "../../Media/linkedin.svg";
 import instagram from "../../Media/instagram.svg";
+import {useState} from "react";
 
 export default function Contact() {
 
     const InputLabelStyle = { fontFamily: "Poppins",fontWeight:"400"};
     const InputStyle = {color:"#FFF",...InputLabelStyle};
 
+    // details will store the form input values
+    const [details, setDetails ] = useState({
+        fullName: "",
+        email: "",
+        contactNumber: "",
+        message: ""
+    });
+
+    console.log(details);
+
+    function handleOnChange(event) {
+
+        // target will point to input field that triggered handleOnChange 
+        const target = event.target.name;
+
+        // value stores updataed value of target input field  
+        const value = event.target.value;
+
+        setDetails(prevDetails=> {
+            return {...prevDetails,[target]:value}
+        });
+    }
+
+    function handleSubmit(event){
+        event.preventDefault();
+        alert("Your Response is successfully submitted");
+    }
+
     return(
         <div className="Contact">
             <h1 className="heading">
                 Get in Touch
             </h1>
-            <form action="">
+            <form onSubmit={handleSubmit} action="">
+                
                 <FormControl fullWidth>
-                    <InputLabel  sx={InputLabelStyle} htmlFor="full-name" variant="outlined">Full Name</InputLabel>
-                    <Input sx={InputStyle} id="full-name" aria-describedby="my-helper-text" />
+                    <InputLabel sx={InputLabelStyle} htmlFor="full-name" variant="outlined">Full Name</InputLabel>
+                    <Input name="fullName" onChange={handleOnChange} value={details.fullName} 
+                    sx={InputStyle} id="full-name" aria-describedby="my-helper-text" required />
                 </FormControl>
+
                 <FormControl fullWidth>
                     <InputLabel sx={InputLabelStyle} htmlFor="email">Email address</InputLabel>
-                    <Input sx={InputStyle} id="email" aria-describedby="my-helper-text" />
+                    <Input name="email" onChange={handleOnChange} value={details.email} 
+                    sx={InputStyle} id="email" aria-describedby="my-helper-text" required />
                 </FormControl>
+                
                 <FormControl fullWidth>
                     <InputLabel sx={InputLabelStyle} htmlFor="contact-number">Contact Number</InputLabel>
-                    <Input sx={InputStyle} id="contact-number" aria-describedby="my-helper-text" />
+                    <Input name="contactNumber" onChange={handleOnChange} value={details.contactNumber}
+                    sx={InputStyle} id="contact-number" aria-describedby="my-helper-text" required />
                 </FormControl>
-                <TextField label="Message" multiline maxRows = {10} fullWidth/>
-                <Button className="contact-btn" variant="outlined" > Submit </Button>
+                
+                <TextField name="message" onChange={handleOnChange} value={details.message} 
+                label="Message" multiline maxRows = {10} fullWidth/>
+                
+                <Button type="Submit" className="contact-btn" variant="outlined" > Submit </Button>
             </form>
             <div className="connect-icons">
                 <a href="https://www.linkedin.com/in/ishan-pandey-15527717b/">
