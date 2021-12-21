@@ -37,6 +37,10 @@
 
 @media (max-width:920px) {
 
+    .Projects{
+        grid-template-rows: 1fr 7.5fr;
+    }
+
     .card-container{
         grid-template-columns: 1fr;
     }
@@ -45,5 +49,13 @@
         grid-column: 1 / 4;
         justify-self: center;
     }
+}
+
+@media (max-width:340px) {
+    
+    .Projects .heading{
+        font-size: 2rem;
+    }
+
 }
 

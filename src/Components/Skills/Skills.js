@@ -14,8 +14,7 @@ import python from "../../Media/python.svg";
 
 export default function Skills() {
     return (
-        <div className="Skills">
-            <div className="Skills-container">
+            <div className="Skills">
                 <h1 className="heading">Skills</h1>
                 <div className="icon-container">
                     <img src={html5} alt="hmtl5" />
@@ -32,6 +31,5 @@ export default function Skills() {
                     <img src={python} alt="python" />
                 </div>
             </div>
-        </div>
     );
 }
