@@ -4,6 +4,7 @@
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 10px;
+    justify-items: center;
 }
 
 .Skills > .heading{
@@ -21,7 +22,8 @@
     display: grid;
     grid-template-columns: repeat(3,1fr);
     row-gap: 1rem;
-    justify-content: center;
+    place-items: center;
+    width: 100%;
 }
 
 .icon-container > img {

@@ -3,7 +3,7 @@
     margin: 8% 8%;
     min-height: 100vh;
     grid-template-columns: repeat(3,1fr);
-    row-gap: 1.5rem;
+    row-gap: 2rem;
 }
 
 .card-container{
