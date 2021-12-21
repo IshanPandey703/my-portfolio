@@ -4,7 +4,7 @@ import "./AboutMe.css";
 export default function AboutMe() {
     return (
     <div className="About-me popout">
-        <img src={myimg} alt="My-Photo"/>
+        <img src={myimg} alt="Me"/>
         <div className="Aboutme-text-container">
             <h1 className="heading">About Me</h1>
             <p className="text">Hi, I'm Ishan Pandey, Btech 2nd year undergrad in Electrical & Electronics Engineering, BIT Mesra.
