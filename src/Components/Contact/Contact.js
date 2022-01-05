@@ -39,7 +39,15 @@ export default function Contact() {
 
     function handleSubmit(event){
         event.preventDefault();
-        alert("Your Response is successfully submitted");
+        // alert("Your Response is successfully submitted");
+        fetch("http://localhost:3001/",{
+            method: "POST",
+            headers: {"Content-Type": "application/json"},
+            body: JSON.stringify(details)
+        }).then((response)=>{
+            console.log(response);
+            console.log("Successfully submitted");
+        })
     }
 
     return(
