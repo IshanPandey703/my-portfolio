@@ -22,6 +22,9 @@ export default function ProjectCard(props) {
                 <div className="Project-description">
                     {props.children}
                 </div>
+                <div className="Project-highlight">
+                    {props.highlight}
+                </div>
             </CardContent>
             <CardActions>
                 <a href={props.projLink} style={{textDecoration:"none"}}>
