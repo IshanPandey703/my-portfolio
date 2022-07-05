@@ -2,6 +2,7 @@ import project1 from "../../Media/project-1.png";
 import project2 from "../../Media/project-2.PNG";
 import project3 from "../../Media/project-3.PNG";
 import project4 from "../../Media/project-4.PNG";
+import project5 from "../../Media/project-5.jpg";
 import ProjectCard from "./ProjectCard/ProjectCard";
 import "./Projects.css";
 
@@ -28,6 +29,10 @@ export default function Projects() {
                 <ProjectCard imgSrc={project4} heading = "VSBuddies" highlight = "(Among Top 10: IEEE Mega Project 5.1)"
                 projLink="https://github.com/IshanPandey703/vsbuddies-website">
                     Website to connect college students (Developers) with common interests. Made using React, Firebase, NodeJs.
+                </ProjectCard> 
+                <ProjectCard imgSrc={project5} heading = "NAPS Website"
+                projLink="https://github.com/IshanPandey703/vsbuddies-website">
+                    Official Website of News And Publication Society, BIT Mesra. Made using NextJS, TailWind, NodeJs, MongoDB.
                 </ProjectCard> 
             </div>
         </div>
