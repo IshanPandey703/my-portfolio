@@ -7,7 +7,7 @@ export default function AboutMe() {
         <img src={myimg} alt="Me"/>
         <div className="Aboutme-text-container">
             <h1 className="heading">About Me</h1>
-            <p className="text">Hi, I'm Ishan Pandey, Btech 2nd year undergrad in Electrical & Electronics Engineering, BIT Mesra.
+            <p className="text">Hi, I'm Ishan Pandey, Btech 3rd year undergrad in Electrical & Electronics Engineering, BIT Mesra.
                 My interest lies in programming, problem solving, developing stuff, learning and exploring
                 new technologies. I'm a Full Stack Developer inclined towards Back-end development.
             </p>
